@@ -34,8 +34,8 @@
     .hero__trust-list{font-size:.875rem;color:#64748b;margin:.5rem 0 0}
     .hero__trust-list li{display:inline;list-style:none}
     .hero__trust-list li:not(:last-child)::after{content:' • '}
-    .img-placeholder{background:linear-gradient(135deg,#e2e8f0,#cbd5e1);display:flex;align-items:center;justify-content:center;color:#64748b;font-size:.875rem;aspect-ratio:2/1;min-height:200px}
-    .img-placeholder--square{aspect-ratio:1}
+    .hero__img{width:100%;max-width:100%;height:auto;display:block;border-radius:8px}
+    .gallery img{width:100%;height:auto;display:block;border-radius:8px;object-fit:cover;aspect-ratio:1}
     .benefits ul,.problem ul{list-style:none;padding:0;margin:0 0 1rem}
     .benefits li,.problem li{padding:.5rem 0;padding-left:1.75rem;position:relative}
     .benefits li::before{content:'✔';position:absolute;left:0;color:#059669;font-weight:700}
@@ -75,7 +75,7 @@
   <main>
     <section class="hero">
       <div class="container">
-        <div class="img-placeholder" role="img" aria-label="Hero image placeholder - replace with bathroom or shower photo">Replace with hero image (1200x600)</div>
+        <img class="hero__img" src="hero_section_img.jpg" alt="Modern walk-in shower installation by 2-Day Shower Specialists" width="1200" height="600">
         <h1>Transform Your Bathroom Into a Beautiful Walk-In Shower in Just 2 Days</h1>
         <p class="hero__sub">Durable, low-maintenance shower systems professionally installed by local specialists — with no grout to scrub ever again.</p>
         <div class="hero__cta-wrap">
@@ -136,9 +136,9 @@
           <li>Clean jobsite and professional finish</li>
         </ul>
         <div class="gallery" style="margin-top:2rem">
-          <div class="img-placeholder img-placeholder--square" role="img" aria-label="Before/after placeholder 1">Replace image 1</div>
-          <div class="img-placeholder img-placeholder--square" role="img" aria-label="Before/after placeholder 2">Replace image 2</div>
-          <div class="img-placeholder img-placeholder--square" role="img" aria-label="Before/after placeholder 3">Replace image 3</div>
+          <img src="second img.jpg" alt="Bathroom transformation - before and after walk-in shower" loading="lazy" width="400" height="400">
+          <img src="third img.jpg" alt="Shower remodel project by our local team" loading="lazy" width="400" height="400">
+          <img src="fourth img.jpg" alt="Modern no-grout walk-in shower installation" loading="lazy" width="400" height="400">
         </div>
       </div>
     </section>
